@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChanchoXLiebre</title>
+    <link rel="icon" href="Logo.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="conteiner">
+            <div class="logo">
+                <img src="img/minilogo.png" alt="minilogo" class="redes"><p>ChanchoxLiebre</p>
+            </div>
+            <nav>
+                <a href="#inicio">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#productos">Productos</a>
+                <a href="#direccion">Direccion</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <section>
+        <div class="bg"></div>
+        <div class="bg bg2"></div>
+        <div class="bg bg3"></div>
+    </section>
+
+
+    <section id="inicio">
+        <div>
+            <img class="portada" src="img/logo.png" alt="Logo">
+        </div>
+        <div>
+            <!--<h1>Texto de titulo</h1>-->
+        </div>
+    </section>
+
+    <section id="servicios">
+        <div class="containercard">
+            <div class="card" id="servicio1"><img class="mini" src="img/taza.png" alt="taza">
+                <span>Taza Sublimada</span>
+            </div>
+            <div class="card" id="servicio2"><img src="img/pedidos.png" alt="pedidos" class="mini">
+                <span>Info Pedidos</span>
+            </div>
+            <div class="card" id="servicio3"><img src="img/gorra.png" alt="gorras" class="mini">
+                <span>Gorras</span>
+            </div>
+            <div class="card" id="servicio4"><img src="img/diseño.png" alt="diseños" class="mini">
+                <span>Diseños</span>
+            </div>
+            <div class="card" id="servicio5"><img src="img/catalogo.png" alt="catalogo" class="mini">
+                <span>Catalogo</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+        </div>
+
+
+
+<section id="direccion">
+    <div class="container" id="container">
+        <div class="form-container register-container">
+            <form action="#">
+                <h1>Feria</h1>
+            </form>
+        </div>
+        
+        <div class="form-container login-container">
+            <form action="#">
+                <h1>Local</h1>
+                
+                <div id="map"></div>
+                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBt0H6jPk5JG4_SKmPS5ZRb455Jar9T57k&callback=initMap" async defer></script>
+                        <script>
+                            function initMap() {
+                            var uluru = {lat: -26.817268, lng: -65.217391};
+                            var map = new google.maps.Map(document.getElementById('map'), {
+                                zoom: 15,
+                                center: uluru
+                            });
+                            var marker = new google.maps.Marker({
+                                position: uluru,
+                                map: map
+                            });
+                        }
+                </script>
+            </form>
+        </div>
+        
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1 class="title">Realiza <br> tu pedido</h1>
+                    <p>Si lo deseas puedes pasar por nuestro local</p>
+                    <button class="ghost" id="login">Local</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1 class="title">Encuentranos <br> Este fin de semana</h1>
+                    <p>En la feria mas grande de la ciudad</p>
+                    <button class="ghost" id="register">Feria</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+    
+<!--
+    <section id="direccion">
+        <h1>Ubicacion</h1>
+        <div id="map"></div>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBt0H6jPk5JG4_SKmPS5ZRb455Jar9T57k&callback=initMap" async defer></script>
+        <script>
+            function initMap() {
+            var uluru = {lat: -26.817268, lng: -65.217391};
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: uluru
+            });
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+            }
+        </script>
+    </section>-->
+
+    <footer id="contacto">
+        <div class="social-icons" >
+            <a href="https://api.whatsapp.com/send?phone=543816394457&text=Hola este es un mensaje de prueba"><img class="redes" src="img/whatsapp.png" alt=""></a>
+            <a href="https://www.facebook.com/profile.php?id=100056682144099"><img src="img/facebook.png" alt="face" class="redes"><br></a>
+            <a href="https://www.instagram.com/chanchoxliebre/"><img class="redes" src="img/instagram.png" alt="insta"></a>
+            <a href="#"><img class="redes" src="img/tiktok.png" alt="tiktok"></a>
+        </div>
+        <h4>&copy ChanchoxLiebre 2023</h4>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
